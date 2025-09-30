@@ -85,15 +85,16 @@
 
 
     <div>
-        <h1> Conteúdo Antigo </h1>
+        <h1 id="meu-div"> Conteúdo Antigo </h1>
     </div>
     <script>
         alert("Hello World")
         console.log("Hello People")
         console.log(document.querySelector("h1"))
-        const titulo = document.getElementById("aparecida")
-        titulo.textContent = '<h2> Este é o novo título </h2>'
-        document.write(titulo)
+
+        const meuElemento = document.getElementById("meu-div")
+        meuElemento.textContent = '<h2> Este é o novo título </h2>'
+        document.write(meuElemento)
     </script>
 </body>
 
