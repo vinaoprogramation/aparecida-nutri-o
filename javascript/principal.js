@@ -7,11 +7,11 @@
     paciente = tdPaciente.textContent
     console.log(paciente)
 
-    var tdPeso = paciente.querySelector(".info-peso");
+    var tdPeso = tdPaciente.querySelector(".info-peso");
     peso = tdPeso.textContent
     console.log(peso)
 
-    var tdAltura = paciente.querySelector(".info-altura");
+    var tdAltura = tdPaciente.querySelector(".info-altura");
     altura = tdAltura.textContent
     console.log(altura)
 
