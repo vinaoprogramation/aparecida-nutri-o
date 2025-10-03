@@ -15,12 +15,8 @@
     var gordura = paciente.querySelector(".info-gordura");
     console.log(gordura)
 
-    var calculo-imc = (peso / (altura*altura))
+    var calculoImc = (peso / (altura*altura))
     console.log(calculo-imc)
-
-    var imc = paciente.querySelector(".info-imc");
-
-        imc.textContent = "Olá"
 
 
 
