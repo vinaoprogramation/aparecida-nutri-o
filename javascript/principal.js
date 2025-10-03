@@ -24,6 +24,7 @@
 
     var tdImc = tdPaciente.querySelector(".info-imc")
     imc = tdImc.textContent
+    console.log(imc)
     imc.textContent = calculoImc
 
 
