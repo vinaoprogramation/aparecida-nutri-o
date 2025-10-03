@@ -19,7 +19,7 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = (peso / (altura*altura))
+    var calculoImc = peso / (altura*altura)
     console.log(calculoImc)
 
 
