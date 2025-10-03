@@ -22,10 +22,9 @@
     var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
-    var tdImc = tdPaciente.querySelector(".info-imc")
-    imc = tdImc.textContent
+    var imc = tdPaciente.querySelector(".info-imc")
+    imc.textContent = calculoImc
     console.log(imc)
-    imc.textContent = (calculoImc)
 
 
 
