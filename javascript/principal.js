@@ -15,7 +15,7 @@
     altura = tdAltura.textContent
     console.log(altura)
 
-    var tdGordura = paciente.querySelector(".info-gordura");
+    var tdGordura = tdPaciente.querySelector(".info-gordura");
     gordura = tdGordura.textContent
     console.log(gordura)
 
