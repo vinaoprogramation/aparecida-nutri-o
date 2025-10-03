@@ -19,8 +19,12 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = peso / (altura*altura)
+    var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
+
+    var tdImc = tdPaciente.querySelector(".info-imc")
+    imc = tdImc.textContent
+    imc.textContent = calculoImc
 
 
 
