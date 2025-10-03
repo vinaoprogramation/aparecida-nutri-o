@@ -16,7 +16,7 @@
     console.log(gordura)
 
     var calculoImc = (peso / (altura*altura))
-    console.log(calculo-imc)
+    console.log(calculoImc)
 
 
 
