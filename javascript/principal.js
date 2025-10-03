@@ -3,16 +3,20 @@
         console.log(titulo.textContent);
         titulo.textContent = "Outro Nome";
 
-    var paciente = document.querySelector("#primeiro-paciente");
+    var tdPaciente = document.querySelector("#primeiro-paciente");
+    paciente = tdPaciente.textContent
     console.log(paciente)
 
-    var peso = paciente.querySelector(".info-peso");
+    var tdPeso = paciente.querySelector(".info-peso");
+    peso = tdPeso.textContent
     console.log(peso)
 
-    var altura = paciente.querySelector(".info-altura");
+    var tdAltura = paciente.querySelector(".info-altura");
+    altura = tdAltura.textContent
     console.log(altura)
 
-    var gordura = paciente.querySelector(".info-gordura");
+    var tdGordura = paciente.querySelector(".info-gordura");
+    gordura = tdGordura.textContent
     console.log(gordura)
 
     var calculoImc = (peso / (altura*altura))
