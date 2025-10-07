@@ -189,4 +189,6 @@ button[disabled=disabled], button:disabled {
 
 .calcular{
 	width: 100%;
+	text-align: center;
+	justify-content: center;
 }
