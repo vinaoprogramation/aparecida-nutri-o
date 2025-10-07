@@ -182,8 +182,8 @@ button[disabled=disabled], button:disabled {
 }
 
 #label-calculo{
-	width: 600px;
-	height: 300px;
+	width: 400px;
+	height: 200px;
 	font-size: 3em;
 	background-color: #ec2929;
 	padding: 0;
