@@ -189,6 +189,10 @@ button[disabled=disabled], button:disabled {
 	font-size: 3em;
 	background-color: #ec2929;
 	padding: 0;
-	margin: 0;
+	margin: auto;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
 }
 
