@@ -146,7 +146,7 @@
     imcTexto.textContent = imc
 
 
-    function calculoDoImc(document.querySelector()) {
+    function calculoDoImc("#sexto-paciente") {
         var tdPacienteGlobal = document.querySelector(calculoDoImc);
         paciente = tdPaciente.textContent
 
@@ -168,5 +168,5 @@
         imcTextoGlobal.textContent = imcGlobal
     }
 
-    calculoDoImc("#sexto-paciente")
+    calculoDoImc()
 
