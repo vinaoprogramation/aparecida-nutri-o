@@ -19,7 +19,7 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = (peso / (altura*altura)).toFixed(1)
+    var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
     var imc = tdPaciente.querySelector(".info-imc")
@@ -46,7 +46,7 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = (peso / (altura*altura)).toFixed(1)
+    var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
     var imc = tdPaciente.querySelector(".info-imc")
@@ -74,7 +74,7 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = peso / (altura*altura)).toFixed(1)
+    var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
     var imc = tdPaciente.querySelector(".info-imc")
@@ -101,7 +101,7 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = (peso / (altura*altura)).toFixed(1)
+    var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
     var imc = tdPaciente.querySelector(".info-imc")
@@ -128,7 +128,7 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = (peso / (altura*altura)).toFixed(1)
+    var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
     var imc = tdPaciente.querySelector(".info-imc")
