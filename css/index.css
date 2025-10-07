@@ -144,14 +144,6 @@ button[disabled=disabled], button:disabled {
 	height: 500px;
 }
 
-#label-altura{
-	width: 150px;
-	height: 100px;
-	background-color: #f822d4;
-}
-
-#label-peso{
-	width: 150px;
-	height: 100px;
-	background-color: #22d8f8;
+.input-imc h1{
+	font-size: 30px;
 }
