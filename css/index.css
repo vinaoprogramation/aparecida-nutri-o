@@ -152,23 +152,23 @@ button[disabled=disabled], button:disabled {
 }
 
 .input-imc h1{
-	font-size: 30px;
+	font-size: 20px;
 }
 
 #input-altura{
 	width: 200px;
-	height: 150px;
+	height: 50px;
 	background-color: #555;
 }
 
 #input-peso{
 	width: 200px;
-	height: 150px;
+	height: 50px;
 	background-color: #c4c4c4;
 }
 
 #botao-calculo{
 	width: 200px;
-	height: 150px;
+	height: 50px;
 	background-color: #ec2929;
 }
