@@ -138,3 +138,20 @@ button[disabled=disabled], button:disabled {
 #meu-div{
 	font-size: 100px;
 }
+
+.input-imc{
+	width: 100%;
+	height: 500px;
+}
+
+#label-altura{
+	width: 150px;
+	height: 100px;
+	background-color: #f822d4;
+}
+
+#label-peso{
+	width: 150px;
+	height: 100px;
+	background-color: #22d8f8;
+}
