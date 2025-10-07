@@ -141,12 +141,6 @@ button[disabled=disabled], button:disabled {
 
 .input-imc{
 	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
 }
 
 .input-imc h1{
@@ -159,6 +153,16 @@ button[disabled=disabled], button:disabled {
 
 .input-imc h1{
 	font-size: 20px;
+}
+
+.inputs{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
 }
 
 #input-altura{
