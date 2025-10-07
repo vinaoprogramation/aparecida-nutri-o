@@ -186,3 +186,7 @@ button[disabled=disabled], button:disabled {
 	padding: 0;
 	margin: 0;
 }
+
+.calcular{
+	width: 100%;
+}
