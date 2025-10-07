@@ -146,13 +146,3 @@
     imcTexto.textContent = imc
 
 
-function calculoIndice(document.querySelector()){
-
-    const calculoImc = (peso / (altura*altura))
-    const imcArredondado = calculoImc.toFixed(1)
-    imc = parseFloat(imcArredondado)
-    imcTexto = tdPaciente.querySelector(".info-imc")
-    imcTexto.textContent = imc
-}
-
-    calculoIndice("#sexto-paciente")
