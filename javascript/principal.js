@@ -1,3 +1,8 @@
+/* codigo original
+
+
+
+
 
     var tdPaciente = document.querySelector("#primeiro-paciente");
     paciente = tdPaciente.textContent
@@ -20,9 +25,6 @@
     imc = parseFloat(imcArredondado)
     imcTexto = tdPaciente.querySelector(".info-imc")
     imcTexto.textContent = imc
-
-    
-
 
 
 
@@ -141,7 +143,7 @@
     imcTexto = tdPaciente.querySelector(".info-imc")
     imcTexto.textContent = imc
 
-
+*/
     
     function calcularIMC(pacienteId) {
     // Seleciona o paciente com o id fornecido
@@ -178,5 +180,20 @@
 }
 
 // Exemplo de uso
+var imcCalculado = calcularIMC("primeiro-paciente");
+console.log(imcCalculado);
+
+var imcCalculado = calcularIMC("segundo-paciente");
+console.log(imcCalculado);
+
+var imcCalculado = calcularIMC("terceiro-paciente");
+console.log(imcCalculado);
+
+var imcCalculado = calcularIMC("quarto-paciente");
+console.log(imcCalculado);
+
+var imcCalculado = calcularIMC("quinto-paciente");
+console.log(imcCalculado);
+
 var imcCalculado = calcularIMC("sexto-paciente");
 console.log(imcCalculado);
