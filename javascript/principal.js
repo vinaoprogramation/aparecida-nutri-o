@@ -155,4 +155,4 @@ function calculoIndice(document.querySelector()){
     imcTexto.textContent = imc
 }
 
-    imc("#sexto-paciente")
+    calculoIndice("#sexto-paciente")
