@@ -146,7 +146,7 @@
     imcTexto.textContent = imc
 
 
-function imc(document.querySelector()){
+function calculoIndice(document.querySelector()){
 
     const calculoImc = (peso / (altura*altura))
     const imcArredondado = calculoImc.toFixed(1)
