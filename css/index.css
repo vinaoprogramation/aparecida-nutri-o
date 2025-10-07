@@ -157,7 +157,7 @@ button[disabled=disabled], button:disabled {
 	display: block;
 }
 
-.input-imc h2:nth-child(3){
+.input-imc:nth-child(6){
 	width: 100%;
 }
 
