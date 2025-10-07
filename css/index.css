@@ -219,3 +219,12 @@ button[disabled=disabled], button:disabled {
 	width: 420px;
 	height: 220px;
 }
+
+#label-calculo p{
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
