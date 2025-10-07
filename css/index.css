@@ -157,6 +157,10 @@ button[disabled=disabled], button:disabled {
 	display: block;
 }
 
+.input-imc h2:nth-child(3){
+	width: 100%;
+}
+
 #input-altura{
 	width: 200px;
 	height: 100px;
