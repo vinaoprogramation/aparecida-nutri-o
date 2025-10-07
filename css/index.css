@@ -149,7 +149,8 @@ button[disabled=disabled], button:disabled {
 
 .input-imc h1{
 	width: 100%;
-	font-size: 40px;
+	font-size: 5em;
+	text-align: center;
 	display: block;
 }
 
