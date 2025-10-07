@@ -146,3 +146,13 @@
     imcTexto.textContent = imc
 
 
+function imc(document.querySelector()){
+
+    const calculoImc = (peso / (altura*altura))
+    const imcArredondado = calculoImc.toFixed(1)
+    imc = parseFloat(imcArredondado)
+    imcTexto = tdPaciente.querySelector(".info-imc")
+    imcTexto.textContent = imc
+}
+
+    imc("#sexto-paciente")
