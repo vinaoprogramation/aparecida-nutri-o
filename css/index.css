@@ -146,7 +146,7 @@ button[disabled=disabled], button:disabled {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 0;
-	margin: 0;
+	margin-top: 20px;
 }
 
 .input-imc h1{
@@ -161,16 +161,22 @@ button[disabled=disabled], button:disabled {
 	width: 200px;
 	height: 50px;
 	background-color: #555;
+	padding: 0;
+	margin: 0;
 }
 
 #input-peso{
 	width: 200px;
 	height: 50px;
 	background-color: #c4c4c4;
+	padding: 0;
+	margin: 0;
 }
 
 #botao-calculo{
 	width: 200px;
 	height: 50px;
 	background-color: #ec2929;
+	padding: 0;
+	margin: 0;
 }
