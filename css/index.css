@@ -186,6 +186,10 @@ button[disabled=disabled], button:disabled {
 	display: none;
 }
 
+.calcular{
+	width: 100%;
+}
+
 .textos{
 	justify-content: center;
 	align-items: center;
