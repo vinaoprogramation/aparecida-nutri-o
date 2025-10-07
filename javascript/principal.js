@@ -146,3 +146,27 @@
     imcTexto.textContent = imc
 
 
+    function calculoDoImc(document.querySelector()) {
+        var tdPaciente = document.querySelector(calculoDoImc);
+        paciente = tdPaciente.textContent
+
+        var tdPeso = tdPaciente.querySelector(".info-peso");
+        peso = tdPeso.textContent
+
+        var tdAltura = tdPaciente.querySelector(".info-altura");
+        altura = tdAltura.textContent
+
+        var tdGordura = tdPaciente.querySelector(".info-gordura");
+        gordura = tdGordura.textContent
+
+        var calculoImc = Math.round(peso / (altura*altura))
+
+        var calculoImc = (peso / (altura*altura))
+        var imcArredondado = calculoImc.toFixed(1)
+        imc = parseFloat(imcArredondado)
+        imcTexto = tdPaciente.querySelector(".info-imc")
+        imcTexto.textContent = imc
+    }
+
+    calculoDoImc("#sexto-paciente")
+
