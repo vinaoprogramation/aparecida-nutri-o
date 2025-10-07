@@ -149,13 +149,19 @@ button[disabled=disabled], button:disabled {
 }
 
 #input-altura{
-
+	width: 200px;
+	height: 150px;
+	background-color: #555;
 }
 
 #input-peso{
-
+	width: 200px;
+	height: 150px;
+	background-color: #c4c4c4;
 }
 
 #botao-calculo{
-	
+	width: 200px;
+	height: 150px;
+	background-color: #ec2929;
 }
