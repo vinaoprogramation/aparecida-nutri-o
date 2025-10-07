@@ -144,6 +144,7 @@ button[disabled=disabled], button:disabled {
 	height: 500px;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .input-imc h1{
