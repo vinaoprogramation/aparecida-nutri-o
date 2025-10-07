@@ -147,6 +147,7 @@ button[disabled=disabled], button:disabled {
 	flex-wrap: wrap;
 	padding: 0;
 	margin-top: 20px;
+	border: none;
 }
 
 .input-imc h1{
@@ -157,6 +158,11 @@ button[disabled=disabled], button:disabled {
 	display: block;
 }
 
+.input-imc h2{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
 
 #input-altura{
 	width: 300px;
