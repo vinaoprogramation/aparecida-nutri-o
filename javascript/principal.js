@@ -23,11 +23,15 @@
     if (peso < 0 || peso>1000){
         console.log("Peso inválido")
         pesoEhValido = false;
+        imcTexto = tdPaciente.querySelector(".info-imc")
+        imcTexto.textContent = "Peso Inválido"
     }
 
     if (altura < 0 || altura > 3.00){
         console.log("Altura inválida")
         alturaEhValida = false;
+        imcTexto = tdPaciente.querySelector(".info-imc")
+        imcTexto.textContent = "Altura Inválida"
     }
 
 
@@ -97,15 +101,26 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = Math.round(peso / (altura*altura))
-    console.log(calculoImc)
+    
+    if (peso < 0 || peso>1000){
+        console.log("Peso inválido")
+        pesoEhValido = false;
+    }
 
-    var calculoImc = ((peso / (altura*altura)))
-    var imcArredondado = calculoImc.toFixed(1)
-    imc = parseFloat(imcArredondado)
-    imcTexto = tdPaciente.querySelector(".info-imc")
-    imcTexto.textContent = imc
+    if (altura < 0 || altura > 3.00){
+        console.log("Altura inválida")
+        alturaEhValida = false;
+    }
 
+
+    if(alturaEhValida == true && pesoEhValido == true){
+        var calculoImc = ((peso / (altura*altura)))
+        var imcArredondado = calculoImc.toFixed(1)
+        imc = parseFloat(imcArredondado)
+        imcTexto = tdPaciente.querySelector(".info-imc")
+        imcTexto.textContent = imc
+    }
+    
 
 
 
@@ -126,14 +141,26 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = Math.round(peso / (altura*altura))
-    console.log(calculoImc)
+    
+    if (peso < 0 || peso>1000){
+        console.log("Peso inválido")
+        pesoEhValido = false;
+    }
 
-    var calculoImc = ((peso / (altura*altura)))
-    var imcArredondado = calculoImc.toFixed(1)
-    imc = parseFloat(imcArredondado)
-    imcTexto = tdPaciente.querySelector(".info-imc")
-    imcTexto.textContent = imc
+    if (altura < 0 || altura > 3.00){
+        console.log("Altura inválida")
+        alturaEhValida = false;
+    }
+
+
+    if(alturaEhValida == true && pesoEhValido == true){
+        var calculoImc = ((peso / (altura*altura)))
+        var imcArredondado = calculoImc.toFixed(1)
+        imc = parseFloat(imcArredondado)
+        imcTexto = tdPaciente.querySelector(".info-imc")
+        imcTexto.textContent = imc
+    }
+    
 
 
 
@@ -156,14 +183,26 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = Math.round(peso / (altura*altura))
-    console.log(calculoImc)
+    
+    if (peso < 0 || peso>1000){
+        console.log("Peso inválido")
+        pesoEhValido = false;
+    }
 
-    var calculoImc = ((peso / (altura*altura)))
-    var imcArredondado = calculoImc.toFixed(1)
-    imc = parseFloat(imcArredondado)
-    imcTexto = tdPaciente.querySelector(".info-imc")
-    imcTexto.textContent = imc
+    if (altura < 0 || altura > 3.00){
+        console.log("Altura inválida")
+        alturaEhValida = false;
+    }
+
+
+    if(alturaEhValida == true && pesoEhValido == true){
+        var calculoImc = ((peso / (altura*altura)))
+        var imcArredondado = calculoImc.toFixed(1)
+        imc = parseFloat(imcArredondado)
+        imcTexto = tdPaciente.querySelector(".info-imc")
+        imcTexto.textContent = imc
+    }
+    
 
 
    
