@@ -1,8 +1,3 @@
-/* codigo original
-
-
-
-
 
     var tdPaciente = document.querySelector("#primeiro-paciente");
     paciente = tdPaciente.textContent
@@ -137,63 +132,11 @@
     var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
-    var calculoImc = (peso / (altura*altura))
+    var calculoImc = int((peso / (altura*altura)))
     var imcArredondado = calculoImc.toFixed(1)
     imc = parseFloat(imcArredondado)
     imcTexto = tdPaciente.querySelector(".info-imc")
     imcTexto.textContent = imc
 
-*/
+
     
-    function calcularIMC(pacienteId) {
-    // Seleciona o paciente com o id fornecido
-    var tdPaciente = document.querySelector(`#${pacienteId}`);
-    
-    if (!tdPaciente) {
-        console.log("Paciente não encontrado");
-        return;
-    }
-
-    // Pega as informações do paciente
-    var peso = parseFloat(tdPaciente.querySelector(".info-peso").textContent);
-    var altura = parseFloat(tdPaciente.querySelector(".info-altura").textContent);
-
-    // Verifica se os valores de peso e altura são válidos
-    if (isNaN(peso) || isNaN(altura) || altura === 0) {
-        console.log("Valores de peso ou altura inválidos");
-        return;
-    }
-
-    // Calcula o IMC
-    var calculoImc = peso / (altura * altura);
-    var imcArredondado = calculoImc.toFixed(1);
-    var imc = parseFloat(imcArredondado);
-
-    // Atualiza o IMC na interface (se houver um elemento para isso)
-    var imcTexto = tdPaciente.querySelector(".info-imc");
-    if (imcTexto) {
-        imcTexto.textContent = imc;
-    }
-
-    // Retorna o IMC calculado
-    return imc;
-}
-
-// Exemplo de uso
-var imcCalculado = calcularIMC("primeiro-paciente");
-console.log(imcCalculado);
-
-var imcCalculado = calcularIMC("segundo-paciente");
-console.log(imcCalculado);
-
-var imcCalculado = calcularIMC("terceiro-paciente");
-console.log(imcCalculado);
-
-var imcCalculado = calcularIMC("quarto-paciente");
-console.log(imcCalculado);
-
-var imcCalculado = calcularIMC("quinto-paciente");
-console.log(imcCalculado);
-
-var imcCalculado = calcularIMC("sexto-paciente");
-console.log(imcCalculado);
