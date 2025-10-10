@@ -167,7 +167,7 @@ button[disabled=disabled], button:disabled {
 #input-altura{
 	width: 300px;
 	height: 60px;
-	background-color: #555;
+	background-color: #ffffff;
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
@@ -177,7 +177,7 @@ button[disabled=disabled], button:disabled {
 #input-peso{
 	width: 300px;
 	height: 60px;
-	background-color: hsl(0, 0%, 77%);
+	background-color: hsl(0, 0%, 100%);
 	padding: 0;
 	margin: 0;
 }
