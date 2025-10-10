@@ -62,12 +62,6 @@
     var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
-    var calculoImc = ((peso / (altura*altura)))
-    var imcArredondado = calculoImc.toFixed(1)
-    imc = parseFloat(imcArredondado)
-    imcTexto = tdPaciente.querySelector(".info-imc")
-    imcTexto.textContent = imc
-
     if (peso < 0 || peso>1000){
         console.log("Peso inválido")
         pesoEhValido = false;
