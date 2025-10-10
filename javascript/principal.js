@@ -232,6 +232,7 @@
     
 
     
-
+    peso_user = input("Qual o seu peso?")
+    altura_user = input("Qual a sua altura?")
 
    
