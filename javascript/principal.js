@@ -15,7 +15,7 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = int((peso / (altura*altura)))
+    var calculoImc = ((peso / (altura*altura)))
     var imcArredondado = calculoImc.toFixed(1)
     imc = parseFloat(imcArredondado)
     imcTexto = tdPaciente.querySelector(".info-imc")
@@ -43,7 +43,7 @@
     var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
-    var calculoImc = int((peso / (altura*altura)))
+    var calculoImc = ((peso / (altura*altura)))
     var imcArredondado = calculoImc.toFixed(1)
     imc = parseFloat(imcArredondado)
     imcTexto = tdPaciente.querySelector(".info-imc")
@@ -73,7 +73,7 @@
     var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
-    var calculoImc = int((peso / (altura*altura)))
+    var calculoImc = ((peso / (altura*altura)))
     var imcArredondado = calculoImc.toFixed(1)
     imc = parseFloat(imcArredondado)
     imcTexto = tdPaciente.querySelector(".info-imc")
@@ -102,7 +102,7 @@
     var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
-    var calculoImc = int((peso / (altura*altura)))
+    var calculoImc = ((peso / (altura*altura)))
     var imcArredondado = calculoImc.toFixed(1)
     imc = parseFloat(imcArredondado)
     imcTexto = tdPaciente.querySelector(".info-imc")
@@ -132,7 +132,7 @@
     var calculoImc = Math.round(peso / (altura*altura))
     console.log(calculoImc)
 
-    var calculoImc = int((peso / (altura*altura)))
+    var calculoImc = ((peso / (altura*altura)))
     var imcArredondado = calculoImc.toFixed(1)
     imc = parseFloat(imcArredondado)
     imcTexto = tdPaciente.querySelector(".info-imc")
