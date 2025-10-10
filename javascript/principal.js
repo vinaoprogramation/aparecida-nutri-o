@@ -59,9 +59,6 @@
     gordura = tdGordura.textContent
     console.log(gordura)
 
-    var calculoImc = Math.round(peso / (altura*altura))
-    console.log(calculoImc)
-
 
     if (peso < 0 || peso>1000){
         console.log("Peso inválido")
