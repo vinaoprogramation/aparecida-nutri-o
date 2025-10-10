@@ -45,7 +45,8 @@
     
 
 
-
+    var pesoEhValido = true;
+    var alturaEhValida = true;
 
     var tdPaciente = document.querySelector("#segundo-paciente");
     paciente = tdPaciente.textContent
@@ -90,6 +91,8 @@
 
     
 
+    var pesoEhValido = true;
+    var alturaEhValida = true;
 
     var tdPaciente = document.querySelector("#terceiro-paciente");
     paciente = tdPaciente.textContent
@@ -135,7 +138,8 @@
     
 
 
-
+    var pesoEhValido = true;
+    var alturaEhValida = true;
 
     var tdPaciente = document.querySelector("#quarto-paciente");
     paciente = tdPaciente.textContent
@@ -183,7 +187,8 @@
 
 
 
-
+    var pesoEhValido = true;
+    var alturaEhValida = true;
 
     var tdPaciente = document.querySelector("#quinto-paciente");
     paciente = tdPaciente.textContent
