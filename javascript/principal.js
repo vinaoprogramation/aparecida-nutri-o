@@ -81,8 +81,6 @@
     
 
 
-
-
     var tdPaciente = document.querySelector("#terceiro-paciente");
     paciente = tdPaciente.textContent
     console.log(paciente)
