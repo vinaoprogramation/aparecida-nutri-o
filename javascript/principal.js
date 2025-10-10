@@ -68,7 +68,25 @@
     imcTexto = tdPaciente.querySelector(".info-imc")
     imcTexto.textContent = imc
 
+    if (peso < 0 || peso>1000){
+        console.log("Peso inválido")
+        pesoEhValido = false;
+    }
 
+    if (altura < 0 || altura > 3.00){
+        console.log("Altura inválida")
+        alturaEhValida = false;
+    }
+
+
+    if(alturaEhValida == true && pesoEhValido == true){
+        var calculoImc = ((peso / (altura*altura)))
+        var imcArredondado = calculoImc.toFixed(1)
+        imc = parseFloat(imcArredondado)
+        imcTexto = tdPaciente.querySelector(".info-imc")
+        imcTexto.textContent = imc
+    }
+    
 
 
 
