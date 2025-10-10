@@ -1,6 +1,6 @@
-
     var pesoEhValido = true;
-    var alguraEhValida = true;
+    var alturaEhValida = true;
+    
 
 
 
