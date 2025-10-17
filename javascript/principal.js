@@ -4,7 +4,7 @@ var pacientes = document.querySelectorAll(".paciente")
 console.log(pacientes)
 
 
-for (let i = 0; i < pacientes.lenght ; i++) {
+for (var i = 0; i < pacientes.length ; i++) {
 
     var paciente = paciente[i]
     
