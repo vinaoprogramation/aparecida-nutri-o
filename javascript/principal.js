@@ -191,23 +191,6 @@ if (alturaEhValida == true && pesoEhValido == true) {
 
 
 
-var peso_user = document.querySelector("#user_peso")
-var altura = document.querySelector("#user_altura")
-var imc_user = ((peso_user / (altura_user * altura_user)))
-user_data = document.querySelector("#user_imc")
-user_data.textContent = imc_user
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
