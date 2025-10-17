@@ -1,6 +1,6 @@
 
 
-var pacientes = document.querySelectorAll("primeiro-paciente")
+var pacientes = document.querySelectorAll(".paciente")
 
 
 for (let i = 0; i < pacientes.lenght ; i++) {
