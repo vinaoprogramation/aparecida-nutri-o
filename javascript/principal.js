@@ -1,6 +1,7 @@
 
 
 var pacientes = document.querySelectorAll(".paciente")
+console.log(pacientes)
 
 
 for (let i = 0; i < pacientes.lenght ; i++) {
