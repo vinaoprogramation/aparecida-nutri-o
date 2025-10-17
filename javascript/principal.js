@@ -210,12 +210,12 @@ if (alturaEhValida == true && pesoEhValido == true) {
 
 
 
-function calculaIMC(tdPaciente) {
+function calculaIMC(idPaciente) {
 
     var pesoEhValido = true;
     var alturaEhValida = true;
 
-    var tdPaciente = document.querySelector("#quinto-paciente");
+    var tdPaciente = document.querySelector(idPaciente);
     paciente = tdPaciente.textContent
     console.log(paciente)
 
@@ -255,8 +255,6 @@ function calculaIMC(tdPaciente) {
         imcTexto.textContent = imc
     }
 
-};
+}
 
-  calculaIMC(){
-   console.log(1) 
-  }
+ calculaIMC("primeiro-paciente");
