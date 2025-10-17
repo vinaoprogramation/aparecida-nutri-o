@@ -257,7 +257,6 @@ function calculaIMC(tdPaciente) {
 
 };
 
-  calculaIMC("#segundo-paciente"){
-    console.log("Olá")
-
-};
+  calculaIMC(){
+   console.log(1) 
+  }
