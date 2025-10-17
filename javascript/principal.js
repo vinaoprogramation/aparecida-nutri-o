@@ -48,4 +48,6 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 }
 
-
+function inserir(){
+    console.log('OLÁ')
+}
