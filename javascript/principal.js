@@ -6,7 +6,7 @@ console.log(pacientes)
 
 for (var i = 0; i < pacientes.length ; i++) {
 
-    var paciente = paciente[i]
+    var paciente = pacientes[i]
     
     var tdPeso = paciente.querySelector(".info-peso");
     peso = tdPeso.textContent
