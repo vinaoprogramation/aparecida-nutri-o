@@ -210,12 +210,12 @@ if (alturaEhValida == true && pesoEhValido == true) {
 
 
 
-function calculaIMC(idPaciente) {
+function calculaIMC("idPaciente") {
 
     var pesoEhValido = true;
     var alturaEhValida = true;
 
-    var tdPaciente = document.querySelector(idPaciente);
+    var tdPaciente = document.querySelector("idPaciente");
     paciente = tdPaciente.textContent
     console.log(paciente)
 
