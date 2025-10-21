@@ -59,7 +59,7 @@ function inserir(){
 
     let nome = document.createElement("td")
     nome.className = "info-nome"
-    let nomeContent = document.querySelector("#inserir-texto")
+    let nomeContent = document.querySelector("#inserir-texto").value
     console.log(nomeContent)
     linhaPaciente.appendChild(nome)
 
