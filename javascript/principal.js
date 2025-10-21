@@ -54,8 +54,9 @@ for (var i = 0; i < pacientes.length ; i++) {
 }
 
 function inserir(){
-    let linhaPaciente = document.createElement("paciente");
+    let linhaPaciente = document.createElement("tr");
     linhaPaciente.className = "paciente";
     let tabela = document.getElementById("tabela-pacientes")
     tabela.appendChild(linhaPaciente)
+    console.log(linhaPaciente)
 }
