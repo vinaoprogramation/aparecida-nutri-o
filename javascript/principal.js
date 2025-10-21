@@ -54,6 +54,8 @@ for (var i = 0; i < pacientes.length ; i++) {
 }
 
 function inserir(){
-    let tabela = `Olá, ${table}!`;
-    console.log(tabela);
+    let tabela = document.createElement("paciente");
+    novaDiv.className = "paciente";
+    let tabela = document.getElementById("tabela-pacientes")
+    tabela.appendChild(tabela)
 }
