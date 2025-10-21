@@ -59,15 +59,3 @@ function inserir(){
     let tabela = document.getElementById("tabela-pacientes")
     tabela.appendChild(linhaPaciente)
 }
-
-// 1. Criar o elemento (a tag)
-const novaDiv = document.createElement('div');
-
-// 2. Adicionar conteúdo e atributos
-novaDiv.textContent = 'Conteúdo da nova div';
-novaDiv.id = 'minha-nova-div';
-novaDiv.className = 'classe-css';
-
-// 3. Adicionar a tag a um elemento pai existente no HTML
-const container = document.getElementById('container'); // Assumindo que você tem um <div id="container"></div>
-container.appendChild(novaDiv);
