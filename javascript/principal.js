@@ -82,3 +82,8 @@ function inserir(){
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
 }
+
+let numero = document.querySelector("#inserir-nome")
+let numeroRetirado = numero.value
+console.log(numeroRetirado)
+
