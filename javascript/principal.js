@@ -56,9 +56,28 @@ for (var i = 0; i < pacientes.length ; i++) {
 function inserir(){
     let linhaPaciente = document.createElement("tr");
     linhaPaciente.className = "paciente";
+
+    let nome = document.createElement("td")
+    nome.className = "info-nome"
+    linhaPaciente.appendChild(nome)
+
+    let peso = document.createElement(td)
+    peso.className = "info-peso"
+    linhaPaciente.appendChild(peso)
+
     let altura = document.createElement("td")
-    altura.textContent = "1.92"
+    altura.className = "info-altura"
     linhaPaciente.appendChild(altura)
+
+    let gordura = document.createElement("td")
+    gordura.className = "info-gordura"
+    linhaPaciente.appendChild(gordura)
+
+    let imc = document.createElement("td")
+    imcclassName = "info-imc"
+    linhaPaciente.appendChild(imc)
+
+
     let tabela = document.querySelector("#tabela-pacientes")
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
