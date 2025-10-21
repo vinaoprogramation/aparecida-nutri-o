@@ -58,6 +58,7 @@ function inserir(){
     linhaPaciente.className = "paciente";
     let altura = document.createElement("td")
     altura.textContent = "1.92"
+    linhaPaciente.appendChild(altura)
     let tabela = document.querySelector("#tabela-pacientes")
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
