@@ -83,7 +83,7 @@ function inserir(){
     console.log(linhaPaciente)
 }
 
-let numero = document.querySelector("#inserir-nome")
-let numeroRetirado = numero.value
-console.log(numeroRetirado)
+    let inputNome = document.getElementById('inserir-nome');
+    let valor = inputNome.value;
+    console.log(valor);
 
