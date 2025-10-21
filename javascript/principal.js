@@ -28,6 +28,7 @@ for (var i = 0; i < pacientes.length ; i++) {
         pesoEhValido = false;
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
+        paciente.classList.add(".campo-invalido")
     }
 
     if (altura < 0 || altura > 3.00) {
@@ -35,6 +36,7 @@ for (var i = 0; i < pacientes.length ; i++) {
         alturaEhValida = false;
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Altura Inválida"
+        paciente.classList.add(".campo-invalido")
     }
 
 
