@@ -8,7 +8,7 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     var paciente = pacientes[i]
 
-    paciente.classList.add(".campo-invalido")
+    paciente.classList.add("campo-invalido")
     
     var tdPeso = paciente.querySelector(".info-peso");
     peso = tdPeso.textContent
