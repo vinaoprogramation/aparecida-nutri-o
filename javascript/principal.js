@@ -54,6 +54,6 @@ for (var i = 0; i < pacientes.length ; i++) {
 }
 
 function inserir(){
-    let tabela = `Olá, ${<table>}!`;
+    let tabela = `Olá, ${table}!`;
     console.log(tabela);
 }
