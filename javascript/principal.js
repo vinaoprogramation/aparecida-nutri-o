@@ -8,7 +8,6 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     var paciente = pacientes[i]
 
-    paciente.classList.add("campo-invalido")
     
     var tdPeso = paciente.querySelector(".info-peso");
     peso = tdPeso.textContent
@@ -30,7 +29,9 @@ for (var i = 0; i < pacientes.length ; i++) {
         pesoEhValido = false;
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
-        
+        paciente.classList.add("campo-invalido")
+
+
     }
 
     if (altura < 0 || altura > 3.00) {
