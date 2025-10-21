@@ -56,7 +56,7 @@ for (var i = 0; i < pacientes.length ; i++) {
 function inserir(){
     let linhaPaciente = document.createElement("tr");
     linhaPaciente.className = "paciente";
-    let altura = document.createElement("td"
+    let altura = document.createElement("td")
     altura.textContent = "1.92"
     let tabela = document.querySelector("#tabela-pacientes")
     tabela.appendChild(linhaPaciente)
