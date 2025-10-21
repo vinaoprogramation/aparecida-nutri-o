@@ -54,5 +54,12 @@ for (var i = 0; i < pacientes.length ; i++) {
 }
 
 function inserir(){
-    console.log('OLÁ')
+    let tabela = <tr class="paciente" id="primeiro-paciente">
+                        <td class="info-nome"> Jão </td>
+                        <td class="info-peso"> 1001 </td>
+                        <td class="info-altura"> 1.98 </td>
+                        <td class="info-gordura"> 10 </td>
+                        <td class="info-imc"> 0 </td>
+                    </tr>;
+    console.log(tabela)
 }
