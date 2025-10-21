@@ -83,7 +83,8 @@ function inserir(){
     console.log(linhaPaciente)
 }
 
-    let inputNome = document.getElementById('inserir-nome');
+
+
+    let inputNome = document.getElementById('nomeUsuario');
     let valor = inputNome.value;
     console.log(valor);
-
