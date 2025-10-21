@@ -59,8 +59,9 @@ function inserir(){
 
     let nome = document.createElement("td")
     nome.className = "info-nome"
-    let nomeContent = document.querySelector("#inserir-texto").value
-    console.log(nomeContent)
+    nomeContent = getElementById("inserir-texto")
+    nomeTexto = nomeContent.value
+    nome.textContent = nomeTexto
     linhaPaciente.appendChild(nome)
 
     let peso = document.createElement("td")
