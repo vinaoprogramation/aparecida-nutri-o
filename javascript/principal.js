@@ -39,7 +39,7 @@ for (var i = 0; i < pacientes.length ; i++) {
         alturaEhValida = false;
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Altura Inválida"
-        paciente.classList.add(".campo-invalido")
+        paciente.classList.add("campo-invalido")
     }
 
 
