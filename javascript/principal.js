@@ -86,5 +86,5 @@ function inserir(){
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
 
-    document.querySelectorAll(".inserir").textContent = ""
+    document.querySelectorAll(".inserir").value = ""
 }
