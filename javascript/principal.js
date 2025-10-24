@@ -61,7 +61,7 @@ function inserir(){
         var input = inputs[i];
 
         if (input.value.trim() === ''){
-            console.log("inválido")
+            input.value = "Conteúdo Incálido"
         }
         else{
             let linhaPaciente = document.createElement("tr");
