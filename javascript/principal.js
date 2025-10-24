@@ -86,6 +86,5 @@ function inserir(){
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
 
-    const form = document.querySelectorAll(".inserir")
-    form.reset()
+    document.getElementById("inserir-altura").value = ""
 }
