@@ -53,6 +53,12 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 }
 
+    botao = document.getElementById("adicionar-paciente")
+    function aoClicar(){
+        alert("Você clicou")
+    }
+    botao.addEventListener = ("click", aoClicar())
+
 function inserir(){
     inputs = document.querySelectorAll(".inserir")
 
@@ -60,7 +66,7 @@ function inserir(){
         var input = inputs[i];
 
         if(input.value.trim === ""){
-            
+
         }
         
     }
