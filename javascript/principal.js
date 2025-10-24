@@ -11,15 +11,12 @@ for (var i = 0; i < pacientes.length ; i++) {
     
     var tdPeso = paciente.querySelector(".info-peso");
     peso = tdPeso.textContent
-    console.log(peso)
 
     var tdAltura = paciente.querySelector(".info-altura");
     altura = tdAltura.textContent
-    console.log(altura)
 
     var tdGordura = paciente.querySelector(".info-gordura");
     gordura = tdGordura.textContent
-    console.log(gordura)
 
     var pesoEhValido = true;
     var alturaEhValida = true;
