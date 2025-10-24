@@ -61,7 +61,7 @@ function inserir(){
         var input = inputs[i];
 
         if (input.value.trim() === ''){
-            input.textContent = "Valor Inválido"
+            console.log("inválido")
         }
         
     }
