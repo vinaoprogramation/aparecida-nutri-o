@@ -54,6 +54,16 @@ for (var i = 0; i < pacientes.length ; i++) {
 }
 
 function inserir(){
+    inputs = document.querySelectorAll(".inserir")
+
+    for (let index = 0; index < inputs.length; index++) {
+        var input = inputs[i];
+
+        if(input.value.trim === ""){
+            
+        }
+        
+    }
 
     if(document.querySelectorAll(".inserir").value.trim() !=== ''){
 
