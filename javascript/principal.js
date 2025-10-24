@@ -77,3 +77,5 @@ for (var i = 0; i < pacientes.length ; i++) {
         gordura.classList("info-gordura")
         nome.textContent = document.getElementById("gordura").value
     }
+
+    botao.addEventListener("click", adicionar())
