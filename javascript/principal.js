@@ -59,6 +59,7 @@ function inserir(){
 
     let nome = document.createElement("td")
     nome.className = "info-nome"
+    nome.textContent = document.getElementById("inserir-nome").value
     linhaPaciente.appendChild(nome)
 
     let peso = document.createElement("td")
