@@ -81,9 +81,10 @@ for (var i = 0; i < pacientes.length ; i++) {
     }
 
     botao = document.getElementById("adicionar-paciente")
-    botao.addEventListener("click", adicionar)
+    
     function alerta(){
         console.log("Tá funcionando")
     }
 
     botao.addEventListener("click", alerta)
+    botao.addEventListener("click", adicionar)
