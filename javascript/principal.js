@@ -86,5 +86,8 @@ function inserir(){
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
 
+    document.getElementById("inserir-nome").value = ""
+    document.getElementById("inserir-peso").value = ""
     document.getElementById("inserir-altura").value = ""
+    document.getElementById("inserir-gordura").value = ""
 }
