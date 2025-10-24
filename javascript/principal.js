@@ -85,4 +85,6 @@ function inserir(){
     let tabela = document.querySelector("#tabela-pacientes")
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
+
+    document.querySelectorAll(".inserir").value = ""
 }
