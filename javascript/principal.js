@@ -64,17 +64,17 @@ function inserir(){
 
     let peso = document.createElement("td")
     peso.className = "info-peso"
-    nome.textContent = document.getElementById("inserir-peso").value
+    peso.textContent = document.getElementById("inserir-peso").value
     linhaPaciente.appendChild(peso)
 
     let altura = document.createElement("td")
     altura.className = "info-altura"
-    nome.textContent = document.getElementById("inserir-altura").value
+    altura.textContent = document.getElementById("inserir-altura").value
     linhaPaciente.appendChild(altura)
 
     let gordura = document.createElement("td")
     gordura.className = "info-gordura"
-    nome.textContent = document.getElementById("inserir-gordura").value
+    gordura.textContent = document.getElementById("inserir-gordura").value
     linhaPaciente.appendChild(gordura)
 
     let imc = document.createElement("td")
