@@ -54,6 +54,20 @@ for (var i = 0; i < pacientes.length ; i++) {
 }
 
 function inserir(){
+
+    var inputs = document.querySelectorAll(".inserir")
+
+    for (let i = 0; i < inputs.length; i++) {
+        var input = inputs[i];
+
+        if (input.value.trim() === ''){
+            input.textContent = "Valor Inválido"
+        }
+        
+    }
+
+
+
     let linhaPaciente = document.createElement("tr");
     linhaPaciente.className = "paciente";
 
@@ -85,6 +99,8 @@ function inserir(){
     let tabela = document.querySelector("#tabela-pacientes")
     tabela.appendChild(linhaPaciente)
     console.log(linhaPaciente)
+
+    
 
     document.getElementById("inserir-nome").value = ""
     document.getElementById("inserir-peso").value = ""
