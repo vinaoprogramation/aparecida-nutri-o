@@ -54,21 +54,28 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 
     function adicionar(){
+        let linha = document.createElement("tr")
+        linha.classList.add("paciente")
+
         let nome = document.createElement("td")
-        nome.classList.add(".info-nome")
+        nome.classList.add("info-nome")
         nome.textContent = document.getElementById("nome").value
+        linha.appendChild(nome)
 
         let peso = document.createElement("td")
         peso.classList.add("info-peso")
         nome.textContent = document.getElementById("peso").value
+        linha.appendChild(peso)
 
         let altura = document.createElement("td")
         altura.classList.add("info-altura")
         nome.textContent = document.getElementById("altura").value
+        linha.appendChild(altura)
 
         let gordura = document.createElement("td")
         gordura.classList.add("info-gordura")
         nome.textContent = document.getElementById("gordura").value
+        linha.appendChild(gordura)
     }
 
     botao = document.getElementById("adicionar-paciente")
