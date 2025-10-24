@@ -59,19 +59,19 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     function adicionar(){
         let nome = document.createElement("td")
-        nome.classList("info-nome")
+        nome.classList.add(".info-nome")
         nome.textContent = document.getElementById("nome").value
 
         let peso = document.createElement("td")
-        peso.classList("info-peso")
+        peso.classList.add("info-peso")
         nome.textContent = document.getElementById("peso").value
 
         let altura = document.createElement("td")
-        altura.classList("info-altura")
+        altura.classList.add("info-altura")
         nome.textContent = document.getElementById("altura").value
 
         let gordura = document.createElement("td")
-        gordura.classList("info-gordura")
+        gordura.classList.add("info-gordura")
         nome.textContent = document.getElementById("gordura").value
     }
 
