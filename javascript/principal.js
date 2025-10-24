@@ -76,6 +76,8 @@ for (var i = 0; i < pacientes.length ; i++) {
         gordura.classList.add("info-gordura")
         nome.textContent = document.getElementById("gordura").value
         linha.appendChild(gordura)
+
+        console.log(linha)
     }
 
     botao = document.getElementById("adicionar-paciente")
