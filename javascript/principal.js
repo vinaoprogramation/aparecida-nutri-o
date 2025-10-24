@@ -57,7 +57,7 @@ for (var i = 0; i < pacientes.length ; i++) {
     function aoClicar(){
         alert("Você clicou")
     }
-    botao.addEventListener = ("click", aoClicar)
+    botao.addEventListener("click", aoClicar)
 
 
     
