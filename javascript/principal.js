@@ -53,11 +53,27 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 }
 
-    const botao = document.getElementById("adicionar-paciente")
+    botao = document.getElementById("adicionar-paciente")
     function aoClicar(){
         alert("Você clicou")
     }
-    botao.addEventListener("click", aoClicar)
+    botao.addEventListener("click" aoClicar)
 
 
-    
+    function adicionar(){
+        let nome = document.createElement("td")
+        nome.classList("info-nome")
+        nome.textContent = document.getElementById("nome").value
+
+        let peso = document.createElement("td")
+        peso.classList("info-peso")
+        nome.textContent = document.getElementById("peso").value
+
+        let altura = document.createElement("td")
+        altura.classList("info-altura")
+        nome.textContent = document.getElementById("altura").value
+
+        let gordura = document.createElement("td")
+        gordura.classList("info-gordura")
+        nome.textContent = document.getElementById("gordura").value
+    }
