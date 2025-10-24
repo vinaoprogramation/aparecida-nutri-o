@@ -50,11 +50,7 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 }
 
-    botao = document.getElementById("adicionar-paciente")
-    function aoClicar(){
-        alert("Você clicou")
-    }
-    botao.addEventListener("click", aoClicar)
+    
 
 
     function adicionar(){
@@ -74,5 +70,6 @@ for (var i = 0; i < pacientes.length ; i++) {
         gordura.classList.add("info-gordura")
         nome.textContent = document.getElementById("gordura").value
     }
-
+    
+    botao = document.getElementById("adicionar-paciente")
     botao.addEventListener("click", adicionar())
