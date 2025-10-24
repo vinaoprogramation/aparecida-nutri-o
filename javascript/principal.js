@@ -59,6 +59,7 @@ function inserir(){
 
     let nome = document.createElement("td")
     nome.className = "info-nome"
+    nome.textContent = "João"
     linhaPaciente.appendChild(nome)
 
     let peso = document.createElement("td")
@@ -74,7 +75,7 @@ function inserir(){
     linhaPaciente.appendChild(gordura)
 
     let imc = document.createElement("td")
-    imcclassName = "info-imc"
+    imc.className = "info-imc"
     linhaPaciente.appendChild(imc)
 
 
