@@ -87,5 +87,5 @@ function inserir(){
     console.log(linhaPaciente)
 
     const form = document.querySelectorAll(".inserir")
-    form.reset(a)
+    form.reset()
 }
