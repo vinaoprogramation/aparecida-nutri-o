@@ -53,64 +53,11 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 }
 
-    botao = document.getElementById("adicionar-paciente")
+    const botao = document.getElementById("adicionar-paciente")
     function aoClicar(){
         alert("Você clicou")
     }
     botao.addEventListener = ("click", aoClicar())
 
-function inserir(){
-    inputs = document.querySelectorAll(".inserir")
 
-    for (let index = 0; index < inputs.length; index++) {
-        var input = inputs[i];
-
-        if(input.value.trim === ""){
-
-        }
-        
-    }
-
-    if(document.querySelectorAll(".inserir").value.trim() !=== ''){
-
-        let linhaPaciente = document.createElement("tr");
-        linhaPaciente.className = "paciente";
-        
-        let nome = document.createElement("td")
-        nome.className = "info-nome"
-        nome.textContent = document.getElementById("inserir-nome").value
-        linhaPaciente.appendChild(nome)
-        
-        let peso = document.createElement("td")
-        peso.className = "info-peso"
-        peso.textContent = document.getElementById("inserir-peso").value
-        linhaPaciente.appendChild(peso)
-        
-        let altura = document.createElement("td")
-        altura.className = "info-altura"
-        altura.textContent = document.getElementById("inserir-altura").value
-        linhaPaciente.appendChild(altura)
-        
-        let gordura = document.createElement("td")
-        gordura.className = "info-gordura"
-        gordura.textContent = document.getElementById("inserir-gordura").value
-        linhaPaciente.appendChild(gordura)
-        
-        let imc = document.createElement("td")
-        imc.className = "info-imc"
-        linhaPaciente.appendChild(imc)
-        
-        
-        let tabela = document.querySelector("#tabela-pacientes")
-        tabela.appendChild(linhaPaciente)
-        console.log(linhaPaciente)
-        
-        document.getElementById("inserir-nome").value = ""
-        document.getElementById("inserir-peso").value = ""
-        document.getElementById("inserir-altura").value = ""
-        document.getElementById("inserir-gordura").value = ""
-    }
-    else{
-        alert("Campo Inválido")
-    }
-}
+    
