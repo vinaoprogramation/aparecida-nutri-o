@@ -4,32 +4,11 @@ var pacientes = document.querySelectorAll(".paciente")
 console.log(pacientes)
 
 function calculoImc(peso, altura){
-        var pesoEhValido = true;
-        var alturaEhValida = true;
-
-        if (peso < 0 || peso > 1000) {
-            console.log("Peso inválido")
-            pesoEhValido = false;
-            return pesoEhValido
-
-
-    }
-
-        if (altura < 0 || altura > 3.00) {
-            console.log("Altura inválida")
-            alturaEhValida = false;
-            return alturaEhValida
-    }
-
-
-        if (alturaEhValida == true && pesoEhValido == true) {
-            var calculoImc = ((peso / (altura * altura)))
-            var imcArredondado = calculoImc.toFixed(1)
-            imc = parseFloat(imcArredondado)
-            return imc
-    }
-
-    }
+    var calculoImc = ((peso / (altura * altura)))
+        var imcArredondado = calculoImc.toFixed(1)
+        imc = parseFloat(imcArredondado)
+        return imc
+}
 
 
 for (var i = 0; i < pacientes.length ; i++) {
@@ -46,29 +25,34 @@ for (var i = 0; i < pacientes.length ; i++) {
     var tdGordura = paciente.querySelector(".info-gordura");
     gordura = tdGordura.textContent
 
-    calculoImc(peso, altura)
+    var pesoEhValido = true;
+    var alturaEhValida = true;
 
-    if (pesoEhValido = false ){
+    if (peso < 0 || peso > 1000) {
+        console.log("Peso inválido")
+        pesoEhValido = false;
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
         paciente.classList.add("campo-invalido")
+
+
     }
 
-    if (alturaEhValida = false){
+    if (altura < 0 || altura > 3.00) {
+        console.log("Altura inválida")
+        alturaEhValida = false;
         imcTexto = paciente.querySelector(".info-imc")
-    imcTexto.textContent = "Altura Inválida"
-    paciente.classList.add("campo-invalido")
+        imcTexto.textContent = "Altura Inválida"
+        paciente.classList.add("campo-invalido")
     }
-    
-    else{
+
+
+    if (alturaEhValida == true && pesoEhValido == true) {
+        calucloImc(peso, altura)
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = imc
     }
 
-    
-
-    
-    
 }
 
     
@@ -103,4 +87,6 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     botao = document.getElementById("adicionar-paciente")
     
-    
+    function alerta(){
+        console.log("Tá funcionando")
+    }
