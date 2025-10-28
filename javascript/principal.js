@@ -21,9 +21,6 @@ function verifica(peso, altura){
     if (altura < 0 || altura > 3.00){
         alturaEhValida = 0
     }
-
-    return pesoEhValido
-    return alturaEhValida
 }
 
 for (var i = 0; i < pacientes.length ; i++) {
