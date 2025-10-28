@@ -82,7 +82,9 @@ for (var i = 0; i < pacientes.length ; i++) {
         nome.textContent = document.getElementById("gordura").value
         linha.appendChild(gordura)
 
-        console.log(linha)
+        let tabela = document.getElementById("tabela-pacientes")
+        tabela.appendChild(linha)
+        console.log(tabela)
     }
 
     botao = document.getElementById("adicionar-paciente")
