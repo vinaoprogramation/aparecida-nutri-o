@@ -11,15 +11,15 @@ function calculoImc(peso, altura){
 }
 
 function verifica(peso, altura){
-    var pesoEhValido = 1;
-    var alturaEhValida = 1;
+    let pesoEhValido
+    let alturaEhValida
 
     if (peso < 0 || peso > 1000){
-        pesoEhValido = 0
+        return PesoEhValido
     }
 
     if (altura < 0 || altura > 3.00){
-        alturaEhValida = 0
+        return alturaEhValida
     }
 }
 
@@ -40,14 +40,14 @@ for (var i = 0; i < pacientes.length ; i++) {
     verifica(peso, altura)
     console.log(pesoEhValido, alturaEhValida)
 
-    if (pesoEhValido = 0) {
+    if (pesoEhValido) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
         paciente.classList.add("campo-invalido")
 
     }
 
-    if (alturaEhValida = 0) {
+    if (alturaEhValida) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Altura Inválida"
         paciente.classList.add("campo-invalido")
