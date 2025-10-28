@@ -77,6 +77,9 @@ for (var i = 0; i < pacientes.length ; i++) {
         nome.textContent = document.getElementById("gordura").value
         linha.appendChild(gordura)
 
+        let tabela = document.getElementById("tabela-pacientes")
+        tabela.appendChild(linha)
+
         console.log(linha)
     }
 
@@ -85,6 +88,4 @@ for (var i = 0; i < pacientes.length ; i++) {
     function alerta(){
         console.log("Tá funcionando")
     }
-
-    botao.addEventListener("click", alerta)
     botao.addEventListener("click", adicionar)
