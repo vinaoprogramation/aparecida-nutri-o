@@ -18,7 +18,7 @@ function verifica(){
         return pesoEhValido = false
     }
 
-    if if (altura < 0 || altura > 3.00){
+    if (altura < 0 || altura > 3.00){
         return alturaEhValida = false
     }
 }
