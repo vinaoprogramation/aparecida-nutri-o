@@ -15,11 +15,13 @@ function verifica(peso, altura){
     var alturaEhValida = true;
 
     if (peso < 0 || peso > 1000){
-        return pesoEhValido = false
+        pesoEhValido = false
+        return pesoEhValido
     }
 
     if (altura < 0 || altura > 3.00){
-        return alturaEhValida = false
+        alturaEhValida = false
+        return alturaEhValida
     }
 }
 
