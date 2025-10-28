@@ -41,6 +41,7 @@ for (var i = 0; i < pacientes.length ; i++) {
     gordura = tdGordura.textContent
 
     verifica(peso, altura)
+    console.log(pesoEhValido, alturaEhValida)
 
     if (pesoEhValido = 0) {
         imcTexto = paciente.querySelector(".info-imc")
@@ -55,7 +56,7 @@ for (var i = 0; i < pacientes.length ; i++) {
         paciente.classList.add("campo-invalido")
     }
 
-    if (alturaEhValida = 1 && pesoEhValido = 1) {
+    if (pesoEhValido = 1 && alturaEhValida = 1 ) {
         calculoImc(peso, altura)
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = imc
