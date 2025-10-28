@@ -55,7 +55,7 @@ for (var i = 0; i < pacientes.length ; i++) {
         paciente.classList.add("campo-invalido")
     }
 
-    if (alturaEhValida = 1 || pesoEhValido = 1) {
+    if (alturaEhValida = 1 && pesoEhValido = 1) {
         calculoImc(peso, altura)
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = imc
