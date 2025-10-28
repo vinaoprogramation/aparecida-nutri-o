@@ -16,13 +16,14 @@ function verifica(peso, altura){
 
     if (peso < 0 || peso > 1000){
         pesoEhValido = false
-        return pesoEhValido
     }
 
     if (altura < 0 || altura > 3.00){
         alturaEhValida = false
-        return alturaEhValida
     }
+
+    return pesoEhValido
+    return alturaEhValida
 }
 
 for (var i = 0; i < pacientes.length ; i++) {
@@ -40,7 +41,6 @@ for (var i = 0; i < pacientes.length ; i++) {
     gordura = tdGordura.textContent
 
     verifica(peso, altura)
-    console.log(verifica)
 
     if (pesoEhValido) {
         imcTexto = paciente.querySelector(".info-imc")
