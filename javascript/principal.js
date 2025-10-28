@@ -48,7 +48,7 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 
     if (alturaEhValida == true && pesoEhValido == true) {
-        calucloImc(peso, altura)
+        calculoImc(peso, altura)
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = imc
     }
