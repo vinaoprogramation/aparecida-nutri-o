@@ -3,13 +3,6 @@
 var pacientes = document.querySelectorAll(".paciente")
 console.log(pacientes)
 
-function calculoImc(peso, altura){
-    var calculoImc = ((peso / (altura * altura)))
-        var imcArredondado = calculoImc.toFixed(1)
-        imc = parseFloat(imcArredondado)
-        return imc
-}
-
 
 for (var i = 0; i < pacientes.length ; i++) {
 
@@ -48,7 +41,9 @@ for (var i = 0; i < pacientes.length ; i++) {
 
 
     if (alturaEhValida == true && pesoEhValido == true) {
-        calculoImc(peso, altura)
+        var calculoImc = ((peso / (altura * altura)))
+        var imcArredondado = calculoImc.toFixed(1)
+        imc = parseFloat(imcArredondado)
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = imc
     }
@@ -82,10 +77,14 @@ for (var i = 0; i < pacientes.length ; i++) {
         nome.textContent = document.getElementById("gordura").value
         linha.appendChild(gordura)
 
-        let tabela = document.getElementById("tabela-pacientes")
-        tabela.appendChild(linha)
-        console.log(tabela)
+        console.log(linha)
     }
 
     botao = document.getElementById("adicionar-paciente")
     
+    function alerta(){
+        console.log("Tá funcionando")
+    }
+
+    botao.addEventListener("click", alerta)
+    botao.addEventListener("click", adicionar)
