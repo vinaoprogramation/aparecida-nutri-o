@@ -11,8 +11,8 @@ function calculoImc(peso, altura){
 }
 
 function verifica(peso, altura){
-    let pesoEhValido
-    let alturaEhValida
+    let pesoEhValido = true
+    let alturaEhValida = true
 
     if (peso < 0 || peso > 1000){
         return PesoEhValido
