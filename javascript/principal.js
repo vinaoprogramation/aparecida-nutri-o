@@ -3,6 +3,13 @@
 var pacientes = document.querySelectorAll(".paciente")
 console.log(pacientes)
 
+var form = document.querySelector("#form-adiciona");
+
+var nome = form.nome.value
+var peso = form.peso.value
+var altura = form.altura.value
+var gordura = form.gordura.value
+
 
 for (var i = 0; i < pacientes.length ; i++) {
 
