@@ -42,14 +42,14 @@ for (var i = 0; i < pacientes.length ; i++) {
     
     function verifica(peso, altura)
 
-    if (pesoEhValido = false) {
+    if (pesoEhValido == false) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
         paciente.classList.add("campo-invalido")
 
 
     }
-    if (alturaEhValida = false) {
+    if (alturaEhValida == false) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Altura Inválida"
         paciente.classList.add("campo-invalido")
