@@ -11,15 +11,15 @@ function calculoImc(peso, altura){
 }
 
 function verifica(peso, altura){
-    var pesoEhValido = true;
-    var alturaEhValida = true;
+    var pesoEhValido = 1;
+    var alturaEhValida = 1;
 
     if (peso < 0 || peso > 1000){
-        pesoEhValido = false
+        pesoEhValido = 0
     }
 
     if (altura < 0 || altura > 3.00){
-        alturaEhValida = false
+        alturaEhValida = 0
     }
 
     return pesoEhValido
@@ -41,15 +41,14 @@ for (var i = 0; i < pacientes.length ; i++) {
     gordura = tdGordura.textContent
 
     verifica(peso, altura)
-
-    if (pesoEhValido) {
+    if (pesoEhValido = 0) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
         paciente.classList.add("campo-invalido")
 
 
     }
-    if (alturaEhValida) {
+    if (alturaEhValida = 0) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Altura Inválida"
         paciente.classList.add("campo-invalido")
