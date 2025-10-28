@@ -10,7 +10,7 @@ function calculoImc(peso, altura){
         return imc
 }
 
-function verifica(){
+function verifica(peso, altura){
     var pesoEhValido = true;
     var alturaEhValida = true;
 
@@ -38,7 +38,8 @@ for (var i = 0; i < pacientes.length ; i++) {
     gordura = tdGordura.textContent
 
     
-    function verifica()
+    function verifica(pesp, altura)
+
     if (pesoEhValido = false) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
