@@ -10,18 +10,6 @@ function calculoImc(peso, altura){
         return imc
 }
 
-function verifica(peso, altura){
-    let pesoEhValido = true
-    let alturaEhValida = true
-
-    if (peso < 0 || peso > 1000){
-        return PesoEhValido
-    }
-
-    if (altura < 0 || altura > 3.00){
-        return alturaEhValida
-    }
-}
 
 for (var i = 0; i < pacientes.length ; i++) {
 
@@ -37,23 +25,29 @@ for (var i = 0; i < pacientes.length ; i++) {
     var tdGordura = paciente.querySelector(".info-gordura");
     gordura = tdGordura.textContent
 
-    verifica(peso, altura)
-    console.log(pesoEhValido, alturaEhValida)
+    var pesoEhValido = true;
+    var alturaEhValida = true;
 
-    if (pesoEhValido) {
+    if (peso < 0 || peso > 1000) {
+        console.log("Peso inválido")
+        pesoEhValido = false;
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
         paciente.classList.add("campo-invalido")
 
+
     }
 
-    if (alturaEhValida) {
+    if (altura < 0 || altura > 3.00) {
+        console.log("Altura inválida")
+        alturaEhValida = false;
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Altura Inválida"
         paciente.classList.add("campo-invalido")
     }
 
-    else{
+
+    if (alturaEhValida == true && pesoEhValido == true) {
         calculoImc(peso, altura)
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = imc
