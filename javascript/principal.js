@@ -89,6 +89,3 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     botao = document.getElementById("adicionar-paciente")
     
-    function alerta(){
-        console.log("Tá funcionando")
-    }
