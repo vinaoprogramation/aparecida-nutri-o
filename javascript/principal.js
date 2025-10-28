@@ -3,6 +3,34 @@
 var pacientes = document.querySelectorAll(".paciente")
 console.log(pacientes)
 
+function calculoImc(peso, altura){
+        var pesoEhValido = true;
+        var alturaEhValida = true;
+
+        if (peso < 0 || peso > 1000) {
+            console.log("Peso inválido")
+            pesoEhValido = false;
+            return pesoEhValido
+
+
+    }
+
+        if (altura < 0 || altura > 3.00) {
+            console.log("Altura inválida")
+            alturaEhValida = false;
+            return alturaEhValida
+    }
+
+
+        if (alturaEhValida == true && pesoEhValido == true) {
+            var calculoImc = ((peso / (altura * altura)))
+            var imcArredondado = calculoImc.toFixed(1)
+            imc = parseFloat(imcArredondado)
+            return imc
+    }
+
+    }
+
 
 for (var i = 0; i < pacientes.length ; i++) {
 
@@ -34,7 +62,7 @@ for (var i = 0; i < pacientes.length ; i++) {
     
     else{
         imcTexto = paciente.querySelector(".info-imc")
-    imcTexto.textContent = imc
+        imcTexto.textContent = imc
     }
 
     
@@ -75,30 +103,4 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     botao = document.getElementById("adicionar-paciente")
     
-    function calculoImc(peso, altura){
-        var pesoEhValido = true;
-        var alturaEhValida = true;
-
-        if (peso < 0 || peso > 1000) {
-            console.log("Peso inválido")
-            pesoEhValido = false;
-            return pesoEhValido
-
-
-    }
-
-        if (altura < 0 || altura > 3.00) {
-            console.log("Altura inválida")
-            alturaEhValida = false;
-            return alturaEhValida
-    }
-
-
-        if (alturaEhValida == true && pesoEhValido == true) {
-            var calculoImc = ((peso / (altura * altura)))
-            var imcArredondado = calculoImc.toFixed(1)
-            imc = parseFloat(imcArredondado)
-            return imc
-    }
-
-    }
+    
