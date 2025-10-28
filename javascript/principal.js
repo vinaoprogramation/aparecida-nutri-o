@@ -39,8 +39,7 @@ for (var i = 0; i < pacientes.length ; i++) {
     var tdGordura = paciente.querySelector(".info-gordura");
     gordura = tdGordura.textContent
 
-    
-    function verifica(peso, altura)
+    verifica(peso, altura)
     console.log(verifica)
 
     if (pesoEhValido) {
