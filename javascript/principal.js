@@ -40,7 +40,7 @@ for (var i = 0; i < pacientes.length ; i++) {
     gordura = tdGordura.textContent
 
     
-    function verifica(pesp, altura)
+    function verifica(peso, altura)
 
     if (pesoEhValido = false) {
         imcTexto = paciente.querySelector(".info-imc")
