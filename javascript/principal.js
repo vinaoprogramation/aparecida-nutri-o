@@ -41,6 +41,7 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     
     function verifica(peso, altura)
+    console.log(verifica)
 
     if (pesoEhValido) {
         imcTexto = paciente.querySelector(".info-imc")
