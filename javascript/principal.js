@@ -41,19 +41,21 @@ for (var i = 0; i < pacientes.length ; i++) {
     gordura = tdGordura.textContent
 
     verifica(peso, altura)
+
     if (pesoEhValido = 0) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
         paciente.classList.add("campo-invalido")
 
-
     }
+
     if (alturaEhValida = 0) {
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Altura Inválida"
         paciente.classList.add("campo-invalido")
     }
-    else {
+
+    if (alturaEhValida = 1 || pesoEhValido = 1) {
         calculoImc(peso, altura)
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = imc
