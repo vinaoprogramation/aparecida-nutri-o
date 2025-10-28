@@ -18,36 +18,29 @@ for (var i = 0; i < pacientes.length ; i++) {
     var tdGordura = paciente.querySelector(".info-gordura");
     gordura = tdGordura.textContent
 
-    var pesoEhValido = true;
-    var alturaEhValida = true;
+    calculoImc(peso, altura)
 
-    if (peso < 0 || peso > 1000) {
-        console.log("Peso inválido")
-        pesoEhValido = false;
+    if (pesoEhValido = false ){
         imcTexto = paciente.querySelector(".info-imc")
         imcTexto.textContent = "Peso Inválido"
         paciente.classList.add("campo-invalido")
-
-
     }
 
-    if (altura < 0 || altura > 3.00) {
-        console.log("Altura inválida")
-        alturaEhValida = false;
+    if (alturaEhValida = false){
         imcTexto = paciente.querySelector(".info-imc")
-        imcTexto.textContent = "Altura Inválida"
-        paciente.classList.add("campo-invalido")
+    imcTexto.textContent = "Altura Inválida"
+    paciente.classList.add("campo-invalido")
     }
-
-
-    if (alturaEhValida == true && pesoEhValido == true) {
-        var calculoImc = ((peso / (altura * altura)))
-        var imcArredondado = calculoImc.toFixed(1)
-        imc = parseFloat(imcArredondado)
+    
+    else{
         imcTexto = paciente.querySelector(".info-imc")
-        imcTexto.textContent = imc
+    imcTexto.textContent = imc
     }
 
+    
+
+    
+    
 }
 
     
@@ -82,9 +75,30 @@ for (var i = 0; i < pacientes.length ; i++) {
 
     botao = document.getElementById("adicionar-paciente")
     
-    function alerta(){
-        console.log("Tá funcionando")
+    function calculoImc(peso, altura){
+        var pesoEhValido = true;
+        var alturaEhValida = true;
+
+        if (peso < 0 || peso > 1000) {
+            console.log("Peso inválido")
+            pesoEhValido = false;
+            return pesoEhValido
+
+
     }
 
-    botao.addEventListener("click", alerta)
-    botao.addEventListener("click", adicionar)
+        if (altura < 0 || altura > 3.00) {
+            console.log("Altura inválida")
+            alturaEhValida = false;
+            return alturaEhValida
+    }
+
+
+        if (alturaEhValida == true && pesoEhValido == true) {
+            var calculoImc = ((peso / (altura * altura)))
+            var imcArredondado = calculoImc.toFixed(1)
+            imc = parseFloat(imcArredondado)
+            return imc
+    }
+
+    }
