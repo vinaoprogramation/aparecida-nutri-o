@@ -157,10 +157,15 @@ button[disabled=disabled], button:disabled {
 }
 
 #caixa{
+    display: inline-block;
     width: 
     50px;
     height: 50px;
     border-color: black;
     border-style: solid;
     border-width: 5px;
+}
+
+.divs{
+    margin: 30px;
 }
