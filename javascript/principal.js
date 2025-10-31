@@ -92,8 +92,24 @@ botaoAdicionar.addEventListener("click", function(event){
 
     if (nomeTd.textContent != "" && pesoTd.textContent != "" && alturaTd.textContent != "" && gorduraTd.textContent != ""){
 
-        var imc = calculaImc(peso, altura)
-        imcTd.textContent = imc
+        if (!pesoEhValido) {
+            console.log("Peso inválido!");
+            pesoEhValido = false;
+            tdImc.textContent = "Peso inválido";
+            paciente.classList.add("paciente-invalido");
+        }
+
+        if (!alturaEhValida) {
+            console.log("Altura inválida!");
+            alturaEhValida = false;
+            tdImc.textContent = "Altura inválida";
+            paciente.classList.add("paciente-invalido");
+        }
+
+        if (pesoEhValido && alturaEhValida) {
+            var imc = calculaImc(peso, altura);
+            tdImc.textContent = imc;
+        }
 
         pacienteTr.appendChild(nomeTd)
         pacienteTr.appendChild(pesoTd)
