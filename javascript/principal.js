@@ -90,10 +90,12 @@ botaoAdicionar.addEventListener("click", function(event){
     alturaTd.textContent = altura
     gorduraTd.textContent = gordura
 
-    pacienteTr.append(nomeTd)
-    pacienteTr.append(pesoTd)
-    pacienteTr.append(alturaTd)
-    pacienteTr.append(gorduraTd)
+    pacienteTr.appendChild(nomeTd)
+    pacienteTr.appendChild(pesoTd)
+    pacienteTr.appendChild(alturaTd)
+    pacienteTr.appendChild(gorduraTd)
+
+    tabela.appendChild(tabela)
 
 }   
 
