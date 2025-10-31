@@ -95,7 +95,7 @@ botaoAdicionar.addEventListener("click", function(event){
     pacienteTr.appendChild(alturaTd)
     pacienteTr.appendChild(gorduraTd)
 
-    tabela.appendChild(tabela)
+    tabela.appendChild(pacienteTr)
 
 }   
 
