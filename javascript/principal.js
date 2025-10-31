@@ -62,10 +62,22 @@ function validaAltura(altura) {
 
 let form = document.getElementById("form-adiciona")
 
-var nome = form.nome.value
-var peso = form.peso.value
-var altura = form.altura.value
-var gordura = form.gordura.value
+var nome = form.querySelector("#nome").value
+var peso = form.querySelector("#peso").value
+var altura = form.querySelector("#altura").value
+var gordura = form.querySelector("#gordura").value
 
 var pacienteTr = document.createElement("tr")
-console.log(nome)
+
+var nomeTd = document.createElement("td")
+var pesoTd = document.createElement("td")
+var alturaTd = document.createElement("td")
+var gorduraTd = document.createElement("td")
+var imcTd = document.createElement("td")
+
+let botaoAdicionar = document.getElementById("adicionar-paciente")
+botaoAdicionar.addEventListener("click", inserir())
+
+function inserir(){
+    console.log(nome)
+}
