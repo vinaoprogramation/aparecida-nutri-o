@@ -167,6 +167,7 @@ button[disabled=disabled], button:disabled {
 }
 
 .divs{
+    color: red;
     margin: 30px;
     display: inline-block;
 }
