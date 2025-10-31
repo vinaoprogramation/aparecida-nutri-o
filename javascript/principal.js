@@ -92,24 +92,13 @@ botaoAdicionar.addEventListener("click", function(event){
 
     if (nomeTd.textContent != "" && pesoTd.textContent != "" && alturaTd.textContent != "" && gorduraTd.textContent != ""){
 
-        if (!pesoEhValido) {
-            console.log("Peso inválido!");
-            pesoEhValido = false;
-            tdImc.textContent = "Peso inválido";
-            paciente.classList.add("paciente-invalido");
-        }
 
-        if (!alturaEhValida) {
-            console.log("Altura inválida!");
-            alturaEhValida = false;
-            tdImc.textContent = "Altura inválida";
-            paciente.classList.add("paciente-invalido");
+        if (!validaPeso(peso) || !validaAltura(altura)) {
+            alert(Peso ou Altura inválidos)
         }
-
-        if (pesoEhValido && alturaEhValida) {
-            var imc = calculaImc(peso, altura);
-            tdImc.textContent = imc;
-        }
+        else{
+            var imc = calculaImc(peso, altura)
+        imcTd.textContent = imc
 
         pacienteTr.appendChild(nomeTd)
         pacienteTr.appendChild(pesoTd)
@@ -118,6 +107,8 @@ botaoAdicionar.addEventListener("click", function(event){
         pacienteTr.appendChild(imcTd)
 
         tabela.appendChild(pacienteTr)
+        }
+        
     }
     else{
         alert("Todos os campos são requeridos")
