@@ -90,7 +90,7 @@ botaoAdicionar.addEventListener("click", function(event){
     alturaTd.textContent = altura
     gorduraTd.textContent = gordura
 
-    if (nomeTd.textContent != "" || pesoTd.textContent != "" || alturaTd.textContent != "" || gorduraTd.textContent != ""){
+    if (nomeTd.textContent != "" && pesoTd.textContent != "" && alturaTd.textContent != "" && gorduraTd.textContent != ""){
         pacienteTr.appendChild(nomeTd)
         pacienteTr.appendChild(pesoTd)
         pacienteTr.appendChild(alturaTd)
