@@ -59,3 +59,11 @@ function validaAltura(altura) {
         return false;
     }
 }
+
+let form = document.getElementById("form-adiciona")
+
+var nome = form.nome.value
+var peso = form.peso.value
+var altura = form.altura.value
+var gordura = form.gordura.value
+console.log(nome)
