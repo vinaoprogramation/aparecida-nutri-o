@@ -79,5 +79,5 @@ let botaoAdicionar = document.getElementById("adicionar-paciente")
 botaoAdicionar.addEventListener("click", inserir())
 
 function inserir(){
-    console.log(nome)
+    console.log("olá")
 }
