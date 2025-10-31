@@ -68,7 +68,7 @@ function validaAltura(altura) {
 
 let botaoAdicionar = document.getElementById("adicionar-paciente")
 
-botaoAdicionar.addEventListener("click", function(event)){
+botaoAdicionar.addEventListener("click", function(event){
 
     var form = document.getElementById("form-adiciona")
     var tabela = document.getElementById("tabela-pacientes")
@@ -96,3 +96,5 @@ botaoAdicionar.addEventListener("click", function(event)){
     pacienteTr.append(gorduraTd)
 
 }   
+
+)
