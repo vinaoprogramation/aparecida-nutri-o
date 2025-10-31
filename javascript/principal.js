@@ -94,7 +94,7 @@ botaoAdicionar.addEventListener("click", function(event){
 
 
         if (!validaPeso(peso) || !validaAltura(altura)) {
-            alert(Peso ou Altura inválidos)
+            alert("Peso ou Altura inválidos")
         }
         else{
             var imc = calculaImc(peso, altura)
