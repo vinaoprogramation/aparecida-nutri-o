@@ -91,10 +91,15 @@ botaoAdicionar.addEventListener("click", function(event){
     gorduraTd.textContent = gordura
 
     if (nomeTd.textContent != "" && pesoTd.textContent != "" && alturaTd.textContent != "" && gorduraTd.textContent != ""){
+
+        var imc = calculaImc(peso, altura)
+        imcTd.textContent = imc
+
         pacienteTr.appendChild(nomeTd)
         pacienteTr.appendChild(pesoTd)
         pacienteTr.appendChild(alturaTd)
         pacienteTr.appendChild(gorduraTd)
+        pacienteTr.appendChild(imcTd)
 
         tabela.appendChild(pacienteTr)
     }
