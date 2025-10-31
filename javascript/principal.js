@@ -66,4 +66,6 @@ var nome = form.nome.value
 var peso = form.peso.value
 var altura = form.altura.value
 var gordura = form.gordura.value
+
+var pacienteTr = document.createElement("tr")
 console.log(nome)
