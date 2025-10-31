@@ -90,13 +90,23 @@ botaoAdicionar.addEventListener("click", function(event){
     alturaTd.textContent = altura
     gorduraTd.textContent = gordura
 
-    pacienteTr.appendChild(nomeTd)
-    pacienteTr.appendChild(pesoTd)
-    pacienteTr.appendChild(alturaTd)
-    pacienteTr.appendChild(gorduraTd)
+    if (nomeTd.textContent != "" || pesoTd.textContent != "" || alturaTd.textContent != "" || gorduraTd.textContent != ""){
+        pacienteTr.appendChild(nomeTd)
+        pacienteTr.appendChild(pesoTd)
+        pacienteTr.appendChild(alturaTd)
+        pacienteTr.appendChild(gorduraTd)
 
-    tabela.appendChild(pacienteTr)
+        tabela.appendChild(pacienteTr)
+    }
+    else{
+        alert("Todos os campos são requeridos")
+    }
+
+
+
+    
 
 }   
 
 )
+
