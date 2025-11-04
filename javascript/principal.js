@@ -46,7 +46,7 @@ for (var i = 0; i < pacientes.length; i++) {
         console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
-        paciente.classList.add("paciente-invalido", "campo-inválido");
+        paciente.classList.add("campo-inválido");
     }
 
     if (!validaAltura) {
