@@ -111,6 +111,11 @@ botaoAdicionar.addEventListener("click", function(event){
 
         tabela.appendChild(pacienteTr)
         }
+
+        document.getElementById("nome").value = ""
+        document.getElementById("peso").value = ""
+        document.getElementById("altura").value = ""
+        document.getElementById("gordura").value = ""
         
     }
     else{
