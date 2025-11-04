@@ -64,8 +64,7 @@ for (var i = 0; i < pacientes.length; i++) {
 
 
 
-
-
-
+var nomes = document.querySelectorAll(".info-nome");
+console.log(nomes);
 
 
