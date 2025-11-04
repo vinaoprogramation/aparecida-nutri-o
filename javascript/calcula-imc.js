@@ -78,7 +78,7 @@ botaoBuscar.addEventListener("click", function(event){
 }
 
     var buscarClasse = document.getElementById("conteudo-busca").value
-    if (buscarClasse.textContent = document.querySelectorAll(".info-nome").textContent){
+    if (buscarClasse.textContent = "João"){
         document.querySelector(".João").classList.add("maior")
     }
     
