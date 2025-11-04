@@ -44,21 +44,19 @@ for (var i = 0; i < pacientes.length; i++) {
 
     if (!validaPeso(peso)) {
         console.log("Peso inválido!");
-        pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
-        paciente.classList.add("campo-inválido");
+        paciente.classList.add("campo-invalido");
     }
 
     if (!validaAltura(altura)) {
         console.log("Altura inválida!");
-        alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
-        paciente.classList.add("campo-invalido");
+        tdPeso.classList.add("campo-invalido");
     }
 
     if (pesoEhValido && alturaEhValida) {
         var imc = calculaImc(peso, altura);
-        tdImc.textContent = imc;
+        tdAltura.textContent = imc;
     }
 }
 
