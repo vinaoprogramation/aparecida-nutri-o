@@ -64,7 +64,7 @@ for (var i = 0; i < pacientes.length; i++) {
 
 
 
-var nomes = document.querySelectorAll(".info-nome").textContent;
+var nomes = document.querySelectorAll(".info-nome");
 for (var i = 0; i < nomes.length; i++) {
     nome = nomes[i]
     console.log(nome)
