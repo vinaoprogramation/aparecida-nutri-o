@@ -65,12 +65,21 @@ for (var i = 0; i < pacientes.length; i++) {
 
 
 var nomes = document.querySelectorAll(".info-nome");
-for (var i = 0; i < nomes.length; i++) {
+
+function buscar(){
+    for (var i = 0; i < nomes.length; i++) {
     nome = nomes[i]
     classe = nome.textContent
+    var classeValor = classe.value
     nome.classList.add(classe)
     console.log(nome)
 }
 
+    var buscarClasse = document.getElementById("conteudo-busca").value
+    if (buscarClasse.textContent = "João"){
+        document.querySelector(".João").classList.add("maior")
+    }
+    
+}
 
 
