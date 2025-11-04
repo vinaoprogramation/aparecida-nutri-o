@@ -42,14 +42,14 @@ for (var i = 0; i < pacientes.length; i++) {
     var pesoEhValido = validaPeso(peso);
     var alturaEhValida = validaAltura(altura);
 
-    if (!validaPeso) {
+    if (!validaPeso(peso)) {
         console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
         paciente.classList.add("campo-inválido");
     }
 
-    if (!validaAltura) {
+    if (!validaAltura(altura)) {
         console.log("Altura inválida!");
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
