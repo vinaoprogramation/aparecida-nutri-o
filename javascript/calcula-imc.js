@@ -68,7 +68,7 @@ var nomes = document.querySelectorAll(".info-nome");
 for (var i = 0; i < nomes.length; i++) {
     nome = nomes[i]
     classe = nome.textContent
-    nome.classList.add("classe")
+    nome.classList.add(classe)
     console.log(nome)
 }
 
