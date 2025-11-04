@@ -66,7 +66,9 @@ for (var i = 0; i < pacientes.length; i++) {
 
 var nomes = document.querySelectorAll(".info-nome");
 
-function buscar(){
+    
+botaoBuscar = document.getElementById("buscar")
+botaoBuscar.addEventListener("click", function(event){
     for (var i = 0; i < nomes.length; i++) {
     nome = nomes[i]
     classe = nome.textContent
@@ -80,6 +82,6 @@ function buscar(){
         document.querySelector(".João").classList.add("maior")
     }
     
-}
 
 
+})
