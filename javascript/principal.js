@@ -9,7 +9,7 @@ function calculaImc(peso, altura) {
 
 function validaPeso(peso) {
 
-    if (peso > 0 && peso < 1000) {
+    if (peso > 0 && peso < 500) {
         return true;
     } else {
         return false;
@@ -44,19 +44,21 @@ for (var i = 0; i < pacientes.length; i++) {
 
     if (!validaPeso(peso)) {
         console.log("Peso inválido!");
+        pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
         paciente.classList.add("campo-invalido");
     }
 
     if (!validaAltura(altura)) {
         console.log("Altura inválida!");
+        alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
-        tdPeso.classList.add("campo-invalido");
+        paciente.classList.add("campo-invalido");
     }
 
     if (pesoEhValido && alturaEhValida) {
         var imc = calculaImc(peso, altura);
-        tdAltura.textContent = imc;
+        tdImc.textContent = imc;
     }
 }
 
